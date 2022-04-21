@@ -1,0 +1,119 @@
+//var
+$Violet: hsl(257, 40%, 49%);
+$Soft-Magenta: hsl(300, 69%, 71%);
+$Desktop: 1440px;
+//end of var
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(/images/bg-mobile.svg);
+  background-color: $Violet;
+  @media (max-width: $Desktop) {
+    background-size: cover;
+  }
+}
+header {
+  padding: 35px;
+  padding-bottom: 40px;
+  .logo {
+    width: 125px;
+    @media (max-width: $Desktop) {
+      width: 200px;
+    }
+  }
+}
+.description {
+  width: 100%;
+  @media (max-width: $Desktop) {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+  }
+  .mockup {
+    @media (max-width: $Desktop) {
+      width: 50%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .font {
+    padding-top: 45px;
+    text-align: center;
+    @media (max-width: $Desktop) {
+      text-align: left;
+    }
+    h2 {
+      @media (max-width: $Desktop) {
+        text-align: left;
+        font-size: 30px;
+        max-width: 374px;
+        margin: 0;
+      }
+      max-width: 300px;
+      margin: auto;
+      padding-bottom: 5px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      text-transform: capitalize;
+      text-align: center;
+    }
+    p {
+      @media (max-width: $Desktop) {
+        text-align: left;
+        padding-top: 25px;
+        font-size: 14px;
+        max-width: 400px;
+        padding-bottom: 50px;
+      }
+      max-width: 300px;
+      margin: auto;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      font-weight: 400;
+      padding-bottom: 20px;
+    }
+    a {
+      text-decoration: none;
+      background-color: white;
+      color: $Violet;
+      font-family: "Poppins", sans-serif;
+      font-size: 15px;
+      padding: 15px 65px;
+      border-radius: 25px;
+      transition: 0.5s;
+
+      box-shadow: 5px 5px 9px -1px rgba(0, 0, 0, 0.6);
+      &:hover {
+        background-color: $Soft-Magenta;
+        color: white;
+      }
+    }
+  }
+}
+.icons {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  @media (max-width: $Desktop) {
+    padding-right: 70px;
+    justify-content: right;
+  }
+  .bx {
+    font-size: 20px;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 1px;
+    padding: 5px;
+    &:hover {
+      color: $Soft-Magenta;
+      border-color: $Soft-Magenta;
+    }
+  }
+}
