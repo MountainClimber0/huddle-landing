@@ -1,7 +1,7 @@
 //var
 $Violet: hsl(257, 40%, 49%);
 $Soft-Magenta: hsl(300, 69%, 71%);
-$Desktop: 1440px;
+$Desktop: 1201px;
 //end of var
 * {
   margin: 0;
@@ -11,7 +11,7 @@ $Desktop: 1440px;
 body {
   background-image: url(/images/bg-mobile.svg);
   background-color: $Violet;
-  @media (max-width: $Desktop) {
+  @media (min-width: $Desktop) {
     background-size: cover;
   }
 }
@@ -20,20 +20,20 @@ header {
   padding-bottom: 40px;
   .logo {
     width: 125px;
-    @media (max-width: $Desktop) {
+    @media (min-width: $Desktop) {
       width: 200px;
     }
   }
 }
 .description {
   width: 100%;
-  @media (max-width: $Desktop) {
+  @media (min-width: $Desktop) {
     display: flex;
     justify-content: center;
     gap: 45px;
   }
   .mockup {
-    @media (max-width: $Desktop) {
+    @media (min-width: $Desktop) {
       width: 50%;
     }
     img {
@@ -43,11 +43,11 @@ header {
   .font {
     padding-top: 45px;
     text-align: center;
-    @media (max-width: $Desktop) {
+    @media (min-width: $Desktop) {
       text-align: left;
     }
     h2 {
-      @media (max-width: $Desktop) {
+      @media (min-width: $Desktop) {
         text-align: left;
         font-size: 30px;
         max-width: 374px;
@@ -62,7 +62,7 @@ header {
       text-align: center;
     }
     p {
-      @media (max-width: $Desktop) {
+      @media (min-width: $Desktop) {
         text-align: left;
         padding-top: 25px;
         font-size: 14px;
@@ -99,7 +99,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 15px;
-  @media (max-width: $Desktop) {
+  @media (min-width: $Desktop) {
     padding-right: 70px;
     justify-content: right;
   }
